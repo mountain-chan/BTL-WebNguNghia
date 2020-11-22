@@ -1,0 +1,724 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mrcha/ontologies/2020/10/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/mrcha/ontologies/2020/10/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:QLKS="http://people.brunel.ac.uk/~csstnns/QLKS.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#NguoiCapNhat -->
+
+    <owl:ObjectProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NguoiCapNhat">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <rdfs:range rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKNhanVien"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocKSan -->
+
+    <owl:ObjectProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocKSan">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <rdfs:range rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocKhachHang -->
+
+    <owl:ObjectProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocKhachHang">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <rdfs:range rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocPhong -->
+
+    <owl:ObjectProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocPhong">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <rdfs:range rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocTP -->
+
+    <owl:ObjectProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThuocTP">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <rdfs:range rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#CoGiapBien -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#CoGiapBien">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DaHuy -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DaHuy">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DienTich -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DienTich">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#GiaThue -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#GiaThue">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#MatKhau -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#MatKhau">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TaiKhoan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#NgayDen -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NgayDen">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#NgayTra -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NgayTra">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#SoDienThoai -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#SoDienThoai">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TaiKhoan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenKhachSan -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenKhachSan">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenPhong -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenPhong">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenTaiKhoan -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenTaiKhoan">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TaiKhoan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenThanhPho -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TenThanhPho">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhTien -->
+
+    <owl:DatatypeProperty rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhTien">
+        <rdfs:domain rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong -->
+
+    <owl:Class rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan -->
+
+    <owl:Class rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong -->
+
+    <owl:Class rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang -->
+
+    <owl:Class rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang">
+        <rdfs:subClassOf rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TaiKhoan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKNhanVien -->
+
+    <owl:Class rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKNhanVien">
+        <rdfs:subClassOf rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TaiKhoan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TaiKhoan -->
+
+    <owl:Class rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TaiKhoan"/>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho -->
+
+    <owl:Class rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP1 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP1">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH1"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P1"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-26T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-28T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP10 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP10">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH1"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P2"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-20T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-25T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP2 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP2">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH2"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P2"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-26T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-28T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP3 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP3">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH3"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P3"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-26T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-28T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP4 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP4">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH4"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P4"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-10T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-13T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP5 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP5">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH5"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P5"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-26T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-28T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP6 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP6">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH2"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P1"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-10T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-11T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP7 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP7">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH2"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P1"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-26T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-28T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP8 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP8">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH3"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P8"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-20T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-24T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP9 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DP9">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#DatPhong"/>
+        <QLKS:ThuocKhachHang rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH5"/>
+        <QLKS:ThuocPhong rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P9"/>
+        <QLKS:DaHuy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:DaHuy>
+        <QLKS:NgayDen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-26T08:00:00</QLKS:NgayDen>
+        <QLKS:NgayTra rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-28T09:00:00</QLKS:NgayTra>
+        <QLKS:ThanhTien rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500000</QLKS:ThanhTien>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH1 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH1">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang"/>
+        <QLKS:MatKhau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123</QLKS:MatKhau>
+        <QLKS:SoDienThoai rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1234552342</QLKS:SoDienThoai>
+        <QLKS:TenTaiKhoan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khach Hang 1</QLKS:TenTaiKhoan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH2 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH2">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang"/>
+        <QLKS:MatKhau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123</QLKS:MatKhau>
+        <QLKS:SoDienThoai rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12123123123</QLKS:SoDienThoai>
+        <QLKS:TenTaiKhoan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khach Hang 2</QLKS:TenTaiKhoan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH3 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH3">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang"/>
+        <QLKS:MatKhau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123</QLKS:MatKhau>
+        <QLKS:SoDienThoai rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1321312312312321</QLKS:SoDienThoai>
+        <QLKS:TenTaiKhoan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khach Hang 3</QLKS:TenTaiKhoan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH4 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH4">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang"/>
+        <QLKS:MatKhau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123</QLKS:MatKhau>
+        <QLKS:SoDienThoai rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1234</QLKS:SoDienThoai>
+        <QLKS:TenTaiKhoan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khach Hang 4</QLKS:TenTaiKhoan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH5 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KH5">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKKhachHang"/>
+        <QLKS:MatKhau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123</QLKS:MatKhau>
+        <QLKS:SoDienThoai rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1234234324</QLKS:SoDienThoai>
+        <QLKS:TenTaiKhoan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khach Hang 5</QLKS:TenTaiKhoan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS1 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS1">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1"/>
+        <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
+        <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn A</QLKS:TenKhachSan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS2 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS2">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP2"/>
+        <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:CoGiapBien>
+        <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn B</QLKS:TenKhachSan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS3 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS3">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP3"/>
+        <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
+        <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn C</QLKS:TenKhachSan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS4 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS4">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP4"/>
+        <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:CoGiapBien>
+        <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn D</QLKS:TenKhachSan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS5 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS5">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1"/>
+        <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:CoGiapBien>
+        <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn E</QLKS:TenKhachSan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS6 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS6">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1"/>
+        <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
+        <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn F</QLKS:TenKhachSan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS7 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS7">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP2"/>
+        <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
+        <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn H</QLKS:TenKhachSan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV1 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV1">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKNhanVien"/>
+        <QLKS:MatKhau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">admin123</QLKS:MatKhau>
+        <QLKS:SoDienThoai rdf:datatype="http://www.w3.org/2001/XMLSchema#int">123445</QLKS:SoDienThoai>
+        <QLKS:TenTaiKhoan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nhan Vien 1</QLKS:TenTaiKhoan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV2 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV2">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TKNhanVien"/>
+        <QLKS:MatKhau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">admin123</QLKS:MatKhau>
+        <QLKS:SoDienThoai rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1234342</QLKS:SoDienThoai>
+        <QLKS:TenTaiKhoan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nhan Vien 2</QLKS:TenTaiKhoan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P1 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P1">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS1"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">800000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 101</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P10 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P10">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS2"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">700000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 202</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P2 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P2">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS2"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 201</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P3 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P3">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS3"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">700000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 301</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P4 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P4">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS4"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">900000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 401</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P5 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P5">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS5"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">850000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 501</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P6 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P6">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS6"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">860000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 601</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P7 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P7">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS7"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">650000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 701</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P8 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P8">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS1"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">650000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 102</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#P9 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#P9">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#Phong"/>
+        <QLKS:ThuocKSan rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS1"/>
+        <QLKS:DienTich rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</QLKS:DienTich>
+        <QLKS:GiaThue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">820000</QLKS:GiaThue>
+        <QLKS:TenPhong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phong 103</QLKS:TenPhong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho"/>
+        <QLKS:TenThanhPho rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hà Nội</QLKS:TenThanhPho>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP2 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP2">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho"/>
+        <QLKS:TenThanhPho rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hồ Chí Minh</QLKS:TenThanhPho>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP3 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP3">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho"/>
+        <QLKS:TenThanhPho rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đà Nẵng</QLKS:TenThanhPho>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP4 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP4">
+        <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#ThanhPho"/>
+        <QLKS:TenThanhPho rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thành Phố Huế</QLKS:TenThanhPho>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP5 -->
+
+    <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP5"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
