@@ -13,8 +13,9 @@ select *  WHERE {
 ORDER BY (?Ten) 
 ```
 
-```json
+
 ## Tìm tất cả các khách sạn thuộc một thành phố
+```bash
 select *  WHERE {
 	?KhachSan qlks:ThuocTP qlks:TP1.
 	?KhachSan qlks:TenKhachSan ?TenKhachSan.
@@ -23,14 +24,18 @@ select *  WHERE {
 ```
 
 ## Tìm các khách sạn có giáp biển
+```bash
 select *  WHERE {
 	?KhachSan qlks:TenKhachSan ?Ten.
 	?KhachSan qlks:CoGiapBien ?GiapBien.
 	FILTER (?GiapBien = true)
 }
 ORDER BY (?Ten) 
+```
+
 
 ## Danh sách phòng của một khách sạn
+```bash
 select *  WHERE {
 	?Phong qlks:ThuocKSan qlks:KS1.
 	?Phong qlks:TenPhong ?TenPhong.
@@ -38,17 +43,20 @@ select *  WHERE {
 	?Phong qlks:GiaThue ?GiaThue.
 }
 ORDER BY DESC(?GiaThue)
-
+```
 
 ## Tìm các phòng có diện tích n
+```
 select *  WHERE {
 	?Phong qlks:TenPhong ?TenPhong.
 	?Phong qlks:DienTich ?DienTich.
 	?Phong qlks:GiaThue ?GiaThue.
 	FILTER (?DienTich = 25)
 }
+```
 
 ## Tìm các phòng có diện tích > n
+```bash
 select *  WHERE {
 	?Phong qlks:TenPhong ?TenPhong.
 	?Phong qlks:DienTich ?DienTich.
@@ -56,8 +64,10 @@ select *  WHERE {
 	FILTER (?DienTich > 25)
 }
 order by desc (?DienTich)
+```
 
 ## Tìm các phòng có diện tích n của khách sạn a
+```bash
 select *  WHERE {
 	?Phong qlks:ThuocKSan qlks:KS1.
 	?Phong qlks:TenPhong ?TenPhong.
@@ -65,17 +75,20 @@ select *  WHERE {
 	?Phong qlks:GiaThue ?GiaThue.
 	FILTER (?DienTich = 25)
 }
-
+```bash
 
 ## Tìm thông tin của của phòng a
+```bash
 select *  WHERE {
 	?Phong qlks:TenPhong ?TenPhong.
 	?Phong qlks:DienTich ?DienTich.
 	?Phong qlks:GiaThue ?GiaThue.
 	FILTER (?TenPhong = "Phong 101")
 }
+```
 
 ## Tìm các phòng đã được đặt vào ngày n
+```
 select *  WHERE {
 	?DP qlks:NgayDen ?NgayDen.
 	?DP qlks:NgayTra ?NgayTra.
@@ -84,9 +97,10 @@ select *  WHERE {
 	FILTER (?NgayDen <= "2020-11-22T08:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> && ?NgayTra >= "2020-11-22T08:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>)
 }
 order by (?NgayDen)
-
+```
 
 ## Tìm các đơn đặt phòng đã bị hủy
+```
 select *  WHERE {
 	?DP qlks:NgayDen ?NgayDen.
 	?DP qlks:NgayTra ?NgayTra.
@@ -94,4 +108,5 @@ select *  WHERE {
 	?DP qlks:DaHuy ?DaHuy.
 	FILTER (?DaHuy = true)
 }
+```
 
