@@ -5,18 +5,22 @@
 # SPARQL query
 
 ## Lấy tất cả khách sạn
+```bash
 select *  WHERE {
 	?KhachSan qlks:TenKhachSan ?Ten.
 	?KhachSan qlks:CoGiapBien ?GiapBien.
 }
 ORDER BY (?Ten) 
+```
 
+```json
 ## Tìm tất cả các khách sạn thuộc một thành phố
 select *  WHERE {
 	?KhachSan qlks:ThuocTP qlks:TP1.
 	?KhachSan qlks:TenKhachSan ?TenKhachSan.
 	?KhachSan qlks:CoGiapBien ?GiapBien.
 }
+```
 
 ## Tìm các khách sạn có giáp biển
 select *  WHERE {
