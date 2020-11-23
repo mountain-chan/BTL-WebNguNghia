@@ -2,6 +2,16 @@
 Đề tài: Mô quản lý đặt phòng khách sạn trên Protoge, sử dụng truy vấn SPARQL query để tìm kiếm dữ liệu
 
 
+# RDF và rdfs
+
+## rdfs là các rằng buộc, cấu trúc của rdf, rdf là các thể hiện của rdfs
+## Mỗi thuộc tính đều có Domain và Range
+## Domain: chỉ ra thuộc tính thuộc về lớp nào
+## Range : miền giá trị của thuộc tính
+
+
+
+
 # SPARQL query
 
 ## Lấy tất cả khách sạn
@@ -103,7 +113,7 @@ select *  WHERE {
 	?DP qlks:NgayTra ?NgayTra.
 	?DP qlks:ThanhTien ?ThanhTien.
 	?DP qlks:DaHuy ?DaHuy.
-	FILTER (?NgayDen <= "2020-11-22T08:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> && ?NgayTra >= "2020-11-22T08:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>)
+	FILTER (?NgayDen <= "2020-11-22T08:00:00"^^xsd:dateTime && ?NgayTra >= "2020-11-22T08:00:00"^^xsd:dateTime).
 }
 order by (?NgayDen)
 ```
@@ -119,4 +129,28 @@ select *  WHERE {
 	FILTER (?DaHuy = true)
 }
 ```
+
+## Tìm các đặt phòng của khách hàng a
+```
+PREFIX qlks: <http://people.brunel.ac.uk/~csstnns/QLKS.owl#>
+select *  WHERE {
+	?DP qlks:ThuocKhachHang ?KH.
+	?DP qlks:ThanhTien ?ThanhTien.
+	?KH qlks:TenTaiKhoan ?TenTaiKhoan.
+	Filter (?TenTaiKhoan = "Khach Hang 1")
+}
+```
+
+## Tính tổng tiền đặt phòng của khách hàng a
+```
+PREFIX qlks: <http://people.brunel.ac.uk/~csstnns/QLKS.owl#>
+select  ?TenTaiKhoan  (SUM(?ThanhTien) as ?TongTien)   WHERE {
+	?DP qlks:ThuocKhachHang ?KH.
+	?DP qlks:ThanhTien ?ThanhTien.
+	?KH qlks:TenTaiKhoan ?TenTaiKhoan.
+	Filter (?TenTaiKhoan = "Khach Hang 1")
+}
+group by ( ?TenTaiKhoan)
+```
+
 
