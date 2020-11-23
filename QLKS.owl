@@ -462,6 +462,7 @@
 
     <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS1">
         <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+        <QLKS:NguoiCapNhat rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV1"/>
         <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1"/>
         <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
         <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn A</QLKS:TenKhachSan>
@@ -473,6 +474,7 @@
 
     <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS2">
         <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+		<QLKS:NguoiCapNhat rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV2"/>
         <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP2"/>
         <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:CoGiapBien>
         <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn B</QLKS:TenKhachSan>
@@ -484,6 +486,7 @@
 
     <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS3">
         <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+		<QLKS:NguoiCapNhat rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV1"/>
         <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP3"/>
         <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
         <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn C</QLKS:TenKhachSan>
@@ -495,6 +498,7 @@
 
     <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS4">
         <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+		<QLKS:NguoiCapNhat rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV1"/>
         <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP4"/>
         <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:CoGiapBien>
         <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn D</QLKS:TenKhachSan>
@@ -506,6 +510,7 @@
 
     <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS5">
         <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+		<QLKS:NguoiCapNhat rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV2"/>
         <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1"/>
         <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</QLKS:CoGiapBien>
         <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn E</QLKS:TenKhachSan>
@@ -517,6 +522,7 @@
 
     <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS6">
         <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+		<QLKS:NguoiCapNhat rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV2"/>
         <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP1"/>
         <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
         <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn F</QLKS:TenKhachSan>
@@ -528,6 +534,7 @@
 
     <owl:NamedIndividual rdf:about="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KS7">
         <rdf:type rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#KhachSan"/>
+		<QLKS:NguoiCapNhat rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#NV1"/>
         <QLKS:ThuocTP rdf:resource="http://people.brunel.ac.uk/~csstnns/QLKS.owl#TP2"/>
         <QLKS:CoGiapBien rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</QLKS:CoGiapBien>
         <QLKS:TenKhachSan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khách Sạn H</QLKS:TenKhachSan>
