@@ -75,7 +75,7 @@ select *  WHERE {
 	?Phong qlks:GiaThue ?GiaThue.
 	FILTER (?DienTich = 25)
 }
-```bash
+```
 
 ## Tìm thông tin của của phòng a
 ```bash
